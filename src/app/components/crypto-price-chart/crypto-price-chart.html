@@ -1,0 +1,49 @@
+<div class="chart-container relative max-w-6xl mx-auto p-6 lg:p-8">
+  <!-- Chart Header -->
+  <div class="chart-header mb-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+    <div class="flex items-center space-x-3">
+      <div
+        class="w-10 h-10 bg-linear-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center shadow-lg"
+      >
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+          />
+        </svg>
+      </div>
+      <div>
+        <h2
+          class="text-2xl font-bold bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"
+        >
+          Live Crypto Prices
+        </h2>
+        <p class="text-sm text-gray-500 font-medium">Real-time market data</p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="chart-wrapper relative bg-white/60 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/50 overflow-hidden group hover:shadow-3xl transition-all duration-500 before:absolute before:inset-0 before:bg-linear-to-r before:from-emerald-500/5 before:to-teal-500/5 before:opacity-0 before:group-hover:opacity-100 before:transition-opacity before:duration-500"
+  >
+    <div class="chart-inner relative w-full h-100 lg:h-125 xl:h-150 p-4">
+      <canvas
+        #cryptoChart
+        class="w-full h-full rounded-2xl shadow-xl bg-linear-to-br from-slate-50/50 to-white/90 backdrop-blur-sm border border-slate-200/50"
+      ></canvas>
+    </div>
+
+    <div
+      class="absolute inset-0 bg-linear-to-r from-emerald-500/80 to-teal-600/80 flex items-center justify-center rounded-3xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 backdrop-blur-md z-10"
+    >
+      <div class="text-white text-center">
+        <div
+          class="w-12 h-12 border-4 border-white/30 border-t-white rounded-full animate-spin mx-auto mb-3"
+        ></div>
+        <p class="font-semibold">Loading chart data...</p>
+      </div>
+    </div>
+  </div>
+</div>

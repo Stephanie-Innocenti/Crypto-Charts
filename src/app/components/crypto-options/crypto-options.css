@@ -1,0 +1,52 @@
+
+.crypto-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    padding: 10px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+form { display: flex; flex-direction: column; gap: 10px; }
+
+label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1.25rem;
+    background: slateblue;
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    border-color: #2dd4bf;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(16,185,129,0.1);
+}
+
+button {
+    padding: 12px 24px;
+    background: #0e7490;
+    color: #fef3c7;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover { background: #dbeafe; color: #1e40af; }
+button:active { background: #3b82f6; }
+
